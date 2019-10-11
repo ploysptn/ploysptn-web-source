@@ -31,7 +31,7 @@ export class UserService {
 
   _getUsers() {
     return this.http.post(
-      'http://cs.sci.ubu.ac.th:7512/59110440084/user/_search',
+      'http://cs.sci.ubu.ac.th:7512/59110440406/user/_search',
       {
         query: {
           /*
@@ -51,7 +51,7 @@ export class UserService {
   _saveUser(usr: string, passwd: string) {
     console.log(`user=${usr} passwd:${passwd}`);
     return this.http.post(
-      'http://cs.sci.ubu.ac.th:7512/59110440084/user/_create',
+      'http://cs.sci.ubu.ac.th:7512/59110440406/user/_create',
       {
         user: usr,
         password: passwd,
